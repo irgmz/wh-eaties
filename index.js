@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 const growthbookUrl = 'https://api.growthbook.io/api/v1/features/button-counter/toggle';
-const token = 'secret_S8JpuqCB2kcXPHIC225RYpP5j6S38REAhprGNeM5byU';
+const token = 'secret_token';
 
 app.post('/rollbar', (req, res) => {
   console.log('Received Rollbar webhook', req.body);
